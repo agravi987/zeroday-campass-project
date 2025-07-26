@@ -1,0 +1,74 @@
+.container {
+  background-color: var(--color-bg-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-body);
+  color: var(--color-light-text);
+  padding: 2rem;
+}
+
+.form {
+  background-color: var(--color-bg-secondary);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-accent);
+  margin-bottom: 1.5rem;
+}
+
+.input,
+.select {
+  background-color: var(--color-white);
+  color: #000;
+  border: none;
+  border-radius: var(--radius-lg);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.input:focus,
+.select:focus {
+  border: 2px solid var(--color-primary);
+}
+
+.button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  padding: 0.75rem;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.message {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--color-accent);
+}
+
+.message.error {
+  color: var(--color-danger);
+}

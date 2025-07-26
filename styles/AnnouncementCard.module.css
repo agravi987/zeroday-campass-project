@@ -1,0 +1,39 @@
+.card {
+  background: linear-gradient(to bottom right, #0c1b36, #13294b);
+  color: var(--color-white);
+  padding: 1.75rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  font-family: var(--font-body);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+}
+
+.card h3 {
+  color: var(--color-accent);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-family: var(--font-heading);
+  letter-spacing: 0.5px;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #e0e6f0;
+}
+
+.card small {
+  display: block;
+  color: #9fbad3;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+}

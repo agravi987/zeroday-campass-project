@@ -1,0 +1,64 @@
+.main {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-light-text);
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-body);
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--color-accent);
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.card {
+  background-color: var(--color-bg-primary);
+  border: 1px solid #334c77;
+  border-radius: var(--radius-lg);
+  padding: 1.8rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: var(--shadow-sm);
+  outline: none;
+}
+
+.card:hover,
+.card:focus {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-accent);
+}
+
+.card h2 {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 1rem;
+  color: var(--color-light-text);
+  line-height: 1.5;
+}
+
+.adminNote {
+  margin-top: 2rem;
+  font-style: italic;
+  color: #aaa;
+}

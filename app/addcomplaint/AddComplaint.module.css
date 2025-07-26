@@ -1,0 +1,13 @@
+.container {
+  background-color: var(--color-bg-primary);
+  color: var(--color-light-text);
+}
+
+.heading {
+  font-size: 2rem;
+  color: var(--color-accent);
+  margin-bottom: 2rem;
+  font-family: var(--font-heading);
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}

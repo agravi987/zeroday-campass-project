@@ -1,0 +1,116 @@
+.polls-container {
+  background-color: var(--color-bg-primary);
+  color: var(--color-light-text);
+  font-family: var(--font-body);
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.heading {
+  color: var(--color-accent);
+  font-size: 2rem;
+  font-family: var(--font-heading);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.poll-form {
+  background-color: var(--color-bg-secondary);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input {
+  padding: 0.75rem;
+  border-radius: var(--radius-lg);
+  border: none;
+  outline: none;
+  background-color: #062040;
+  color: var(--color-white);
+  font-size: 1rem;
+}
+
+.button {
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-lg);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.button.primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.button.primary:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.button.secondary {
+  background-color: var(--color-accent);
+  color: var(--color-bg-primary);
+}
+
+.polls-list {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(280px, 1fr)
+  ); /* Responsive grid */
+  gap: 5.5rem;
+  max-width: 1200px; /* Increased max-width for more columns */
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.poll-card {
+  background-color: var(--color-bg-secondary);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  height: 220px; /* Fixed height */
+  width: 100%; /* Full width of grid column */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Optional: Spread content nicely */
+}
+
+.poll-question {
+  font-size: 1.2rem;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+}
+
+.poll-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.option-button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-lg);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.option-button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.text-light {
+  color: var(--color-light-text);
+  text-align: center;
+}

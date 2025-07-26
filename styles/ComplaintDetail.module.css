@@ -1,0 +1,101 @@
+/* styles/ComplaintDetail.module.css */
+
+.container {
+  background-color: var(--color-bg-primary);
+  color: var(--color-light-text);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  font-family: var(--font-body);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+  font-family: var(--font-heading);
+}
+
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-light-text);
+}
+
+.details {
+  background-color: var(--color-bg-secondary);
+  padding: 1rem;
+  border-radius: var(--radius-lg);
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.details p {
+  margin: 0.4rem 0;
+  color: var(--color-accent);
+}
+
+.statusSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.statusSection label {
+  font-weight: bold;
+  color: var(--color-white);
+}
+
+.statusSection select {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-light-text);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  font-family: var(--font-body);
+}
+
+.updateBtn {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  font-family: var(--font-body);
+}
+
+.updateBtn:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.deleteBtn {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  font-weight: bold;
+  font-family: var(--font-body);
+  box-shadow: var(--shadow-sm);
+}
+
+.deleteBtn:hover {
+  background-color: #a93226;
+}
+
+.loading {
+  color: var(--color-white);
+  font-size: 1.2rem;
+  padding: 2rem;
+  text-align: center;
+}

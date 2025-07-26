@@ -1,0 +1,72 @@
+.complaintForm {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-light-text);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-sm);
+  font-family: var(--font-body);
+}
+
+.formHeading {
+  font-size: 1.8rem;
+  color: var(--color-accent);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-family: var(--font-heading);
+}
+
+.errorMessage {
+  color: var(--color-danger);
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.formGroup {
+  margin-bottom: 1.2rem;
+}
+
+.formLabel {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: var(--color-white);
+}
+
+.formInput,
+.formTextarea,
+.formSelect {
+  width: 100%;
+  padding: 0.6rem;
+  background-color: var(--color-bg-primary);
+  color: var(--color-light-text);
+  border: 1px solid #334c77;
+  border-radius: var(--radius-lg);
+  font-size: 1rem;
+  font-family: var(--font-body);
+}
+
+.formTextarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.submitButton {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--radius-lg);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.submitButton:hover {
+  background-color: var(--color-primary-hover);
+}

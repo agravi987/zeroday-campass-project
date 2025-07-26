@@ -1,0 +1,72 @@
+.hero {
+  background: linear-gradient(
+    to bottom,
+    var(--color-bg-primary),
+    var(--color-bg-secondary)
+  );
+  color: var(--color-white);
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper {
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+.hero-image {
+  width: 12rem;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-family: var(--font-heading);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: var(--color-accent);
+  margin-bottom: 2rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-btn {
+  background-color: var(--color-primary);
+  border: none;
+  color: var(--color-white);
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.hero-btn:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.hero-welcome {
+  font-size: 1.2rem;
+  color: var(--color-light-text);
+  margin-top: 1rem;
+}
+
+.hero-btn.logout {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+}

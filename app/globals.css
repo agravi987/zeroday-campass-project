@@ -1,0 +1,74 @@
+/* styles/globals.css */
+
+:root {
+  /* Primary Theme Colors */
+  --color-bg-primary: #0a1a3f;
+  --color-bg-secondary: #001c3c;
+  --color-primary: #003366;
+  --color-primary-hover: #0055aa;
+
+  /* Accent & Support Colors */
+  --color-accent: #aad8ff;
+  --color-light-text: #ccc;
+  --color-white: #ffffff;
+  --color-danger: #c0392b;
+
+  /* Typography */
+  --font-heading: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Borders & Radius */
+  --radius-lg: 0.75rem;
+  --radius-xl: 3rem;
+
+  /* Shadows */
+  --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 5px 15px rgba(0, 51, 102, 0.5);
+}
+
+/* Optional: Set global font and background */
+body {
+  background: var(--color-bg-primary);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #3b82f6; /* Blue links */
+  text-decoration: none;
+}
+
+/* Loading.css */
+.loader {
+  border: 6px solid #1e3a5f;
+  border-top: 6px solid #9fc3e9;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.my-experiments-container {
+  padding: 1rem;
+  background-color: #0c1b36;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.heading {
+  text-align: center;
+  margin: 20px 0;
+  color: #a8c0ff;
+  font-size: 2rem;
+}

@@ -1,0 +1,111 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-bg-secondary);
+  padding: 1rem 2rem;
+  color: var(--color-white);
+  box-shadow: var(--shadow-sm);
+  flex-wrap: wrap;
+  border-radius: var(--radius-lg);
+}
+
+.navbar-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--color-white);
+  font-family: var(--font-heading);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.navbar-links a,
+.navbar-links button {
+  text-decoration: none;
+  border: none;
+  font-size: 1rem;
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: var(--radius-lg);
+  font-family: var(--font-body);
+}
+
+/* Base Button */
+.btn {
+  color: var(--color-white);
+}
+
+/* Distinct Button Styles */
+.btn-login {
+  background-color: var(--color-primary);
+}
+
+.btn-login:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.btn-register {
+  background-color: #00c851; /* Optional: define as --color-success */
+}
+
+.btn-add {
+  background-color: #33b5e5; /* Optional: define as --color-info */
+}
+
+.btn-logout {
+  background-color: var(--color-danger);
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0.6rem;
+    margin-top: 1rem;
+  }
+
+  .navbar-links a,
+  .navbar-links button {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.navbar-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+.profile-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-name {
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 0.9rem;
+}

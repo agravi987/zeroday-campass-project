@@ -1,0 +1,87 @@
+.formContainer {
+  background-color: var(--color-bg-secondary);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  max-width: 600px;
+  margin: 2rem auto;
+  font-family: var(--font-body);
+  color: var(--color-light-text);
+}
+
+.heading {
+  font-size: 1.75rem;
+  font-family: var(--font-heading);
+  color: var(--color-accent);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.error {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-lg);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.inputGroup {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.input,
+.textarea,
+.select {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-bg-primary);
+  color: var(--color-white);
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+  outline: none;
+  background-color: #002856;
+  box-shadow: 0 0 0 2px var(--color-accent);
+}
+
+.textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.select {
+  cursor: pointer;
+}
+
+.submitButton {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  padding: 0.85rem 2rem;
+  font-size: 1rem;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  width: 100%;
+  font-weight: 600;
+}
+
+.submitButton:hover {
+  background-color: var(--color-primary-hover);
+}

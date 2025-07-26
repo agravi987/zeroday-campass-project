@@ -1,0 +1,59 @@
+/* app/feed/page.module.css */
+
+.container {
+  background-color: #0b1120; /* deep dark blue */
+  color: #e2e8f0; /* light text for contrast */
+  padding: 2rem;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #60a5fa; /* light blue */
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 1px 1px 3px #1e3a8a;
+}
+
+.feedGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.feedCard {
+  background-color: #1e293b; /* slightly lighter dark */
+  border: 1px solid #334155;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.feedCard h2 {
+  color: #93c5fd; /* light blue title */
+  margin-bottom: 0.75rem;
+}
+
+.feedCard p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.feedCard a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.feedCard a:hover {
+  text-decoration: underline;
+}
