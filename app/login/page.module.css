@@ -97,14 +97,6 @@
   max-width: 400px;
 }
 
-.errorBox {
-  background-color: #ffe0e0;
-  padding: 1rem;
-  border-radius: 8px;
-  margin-top: 1rem;
-  text-align: center;
-}
-
 .registerLink {
   color: #4e7cff;
   font-weight: 600;
