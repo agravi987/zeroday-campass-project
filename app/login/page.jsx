@@ -65,17 +65,15 @@ export default function SignInPage() {
           className={styles.input}
         />
 
-        {error && (
-          <div className={styles.errorBox}>
-            <p className={styles.error}>{error}</p>
-            <p>
-              Not registered?{" "}
-              <Link href="/register" className={styles.registerLink}>
-                Create an account
-              </Link>
-            </p>
-          </div>
-        )}
+        <div className={styles.errorBox}>
+          <p className={styles.error}>{error}</p>
+          <p>
+            Not registered?{" "}
+            <Link href="/register" className={styles.registerLink}>
+              Create an account
+            </Link>
+          </p>
+        </div>
 
         <button type="submit" className={styles.submitButton}>
           Sign In
