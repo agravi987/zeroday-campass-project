@@ -42,7 +42,10 @@ export default function Navbar() {
                 {session.user?.name ||
                   userRole.charAt(0).toUpperCase() + userRole.slice(1)}
               </span>
-              <button className="btn btn-logout" onClick={() => signOut()}>
+              <button
+                className="btn btn-logout"
+                onClick={() => signOut({ callbackUrl: "/login" })}
+              >
                 🚪 Logout
               </button>
             </div>
