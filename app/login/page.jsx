@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 export default function SignInPage() {
@@ -64,7 +65,17 @@ export default function SignInPage() {
           className={styles.input}
         />
 
-        {error && <p className={styles.error}>{error}</p>}
+        {error && (
+          <div className={styles.errorBox}>
+            <p className={styles.error}>{error}</p>
+            <p>
+              Not registered?{" "}
+              <Link href="/register" className={styles.registerLink}>
+                Create an account
+              </Link>
+            </p>
+          </div>
+        )}
 
         <button type="submit" className={styles.submitButton}>
           Sign In
